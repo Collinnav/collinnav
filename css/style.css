@@ -918,11 +918,12 @@ fieldset {
   padding-top: 100px; /* Location of the box */
   left: 0;
   top: 0;
-  width: 100%; /* Full width */
+  width: 80%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+  margin: 50px auto;
 }
 
 /* Modal Content (image) */
@@ -1040,11 +1041,21 @@ fieldset {
       width: 90%;
       left: 2em;
     }
+    .portfolio_filter {
+    padding-left: 0;
+    display: inline-grid;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
   }
   /* 100% Image Width on Smaller Screens (new modal)*/
   @media only screen and (max-width: 700px){
+    .modal {
+      display: none !important; /* Hidden by default */
+    }
     .modal-content {
-      width: 100%;
+      width: 70%;
     }
   }
 
